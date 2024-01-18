@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Disney+ | Movies & Shows</title>
+    <script src="./app/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <!-- 1 -->
+      <img src="./assets/logo.png" width="100px" height="65px" alt="disney+" />
+      <!-- 2 -->
+      <i
+        class="fas fa-search icon__search"
+        id="search-icon"
+        onclick="showSearcher()"
+      ></i>
+      <i
+        class="fas fa-bars icon__burger"
+        id="burger-icon"
+        onclick="showSubnav()"
+      ></i>
+      <input
+        type="text"
+        class="input"
+        placeholder="search everything!"
+        id="searcher"
+      />
+      <!-- 3 -->
+      <nav class="navbar">
+        <a href="">
+          <i class="fas fa-home"></i>
+          HOME
+          <span class="underline"> </span>
+        </a>
+        <a href="">
+          <i class="fas fa-film"></i>
+          <span class="underline"></span>
+          MOVIES
+        </a>
+        <a href="">
+          <i class="fas fa-tv"></i>
+          SERIES
+          <span class="underline"></span>
+        </a>
+        <a href="">
+          <i class="fas fa-star"></i>
+          ORIGINALS
+          <span class="underline"></span>
+        </a>
+        <a href="">
+          <i class="fas fa-list"></i>
+          WATCHLIST
+          <span class="underline"></span>
+        </a>
+        <img
+          src="./assets/avatar.jpeg"
+          width="40px"
+          height="40px"
+          alt="avatar"
+        />
+      </nav>
+      <!-- 4 -->
+      <nav class="subnav" id="subnav">
+        <a href="">
+          <i class="fas fa-star"></i>
+          ORIGINALS
+          <span class="underline"></span>
+        </a>
+        <a href="">
+          <i class="fas fa-film"></i>
+          <span class="underline"></span>
+          MOVIES
+        </a>
+        <a href="">
+          <i class="fas fa-tv"></i>
+          SERIES
+          <span class="underline"></span>
+        </a>
+        <img
+          src="./assets/avatar.jpeg"
+          width="40px"
+          height="40px"
+          alt="avatar"
+        />
+      </nav>
+    </header>
+  </body>
+</html>

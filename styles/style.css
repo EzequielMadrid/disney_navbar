@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+}
+
+.body {
+  overflow-x: hidden;
+  font-family: monospace;
+  background-color: #25242f;
+}
+
+.header {
+  height: 65px;
+  padding: 10px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+
+.icon__search {
+  position: absolute;
+  left: 120px;
+  font-size: 28px;
+  cursor: pointer;
+  color: cyan;
+}
+
+.icon__burger {
+  display: none !important;
+  font-size: 28px;
+  cursor: pointer;
+  color: cyan;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  min-width: 40px;
+  margin-left: 8px;
+  padding-right: 15px;
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: cyan;
+}
+
+.navbar img {
+  border-radius: 50%;
+}
+
+.underline {
+  width: 85%;
+  height: 3px;
+  margin-bottom: -6px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /*** animations ***/
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-in-out;
+  /******/
+  border-radius: 10px;
+  background-color: cyan;
+}
+
+.navbar a:hover .underline {
+  transform: scaleX(1);
+}
+
+.input {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -52px;
+  padding: 18px;
+  display: none;
+  outline: none;
+  border: none;
+  border-left: 4px groove cyan;
+  border-bottom: 4px groove cyan;
+  border-radius: 4px;
+  font-size: 22px;
+  font-family: monospace;
+  background-color: #000;
+  color: cyan;
+}
+
+.input::placeholder {
+  color: #3b617a;
+}
+
+.subnav {
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 82px;
+  display: none;
+  flex-direction: column;
+  border-bottom-left-radius: 15px;
+  background-color: #000;
+}
+
+.subnav a {
+  min-width: 40px;
+  margin-left: 8px;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: cyan;
+}
+
+.subnav a:hover .underline {
+  transform: scaleX(1);
+  margin-bottom: -2px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .header img {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: end;
+  }
+  .icon__burger {
+    display: block !important;
+  }
+  .subnav img {
+    padding: 10px;
+    display: block;
+    border-radius: 50%;
+  }
+}
